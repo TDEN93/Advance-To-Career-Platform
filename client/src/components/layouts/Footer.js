@@ -5,72 +5,47 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <div>
-            <footer>
-                <div className="container">
-                    <div className="row justify-content-between">
-                        <div className="col">
-                            <a href="#top-of-page">
-                                <h4>A2C</h4>
-                            </a>
-                            <ul className="nav mt-3 info">
-                                <li className="nav-item text-muted">
-                                    <a href="top-of-page" className="nav-link pl-0 mr-2">About</a>
+            <footer className="page-footer font-small stylish-color-dark pt-4">
+                <div className="container text-center text-md-left">
+                    <div className="row">
+                        <div className="col-md-6 mx-auto">
+                            <h4 className="font-weight-bold text-uppercase mt-3 mb-4 text-primary mx-auto">A2C</h4>
+                            <p>Developing Better Developers</p>
+                        </div>
+                        <hr className="clearfix w-100 d-md-none"></hr>
+                        <div className="col-md-2 mx-auto">
+                            <h5 className="font-weight-bold text-uppercase mt-1 mb-2">Links</h5>
+                            <ul className="list-unstyled">
+                                <li className="pt-1">
+                                    <a href="#!">How It Works</a>
                                 </li>
-                                <li className="nav-item">
-                                    <a href="#methods-section" className="nav-link pl-0 mr-2">Methods</a>
+                                <li className="pt-1">
+                                    <a href="#!">Partners</a>
                                 </li>
-                                <li className="nav-item">
-                                    <a href="projects.html" className="nav-link pl-0 mr-2">Projects</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#mentors-sections" className="nav-link pl-0 mr-2">Mentors</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#partners-section" className="nav-link pl-0 mr-2">Partners</a>
+                                <li className="pt-1">
+                                    <a href="#!">Mentors</a>
                                 </li>
                             </ul>
                         </div>
-                        <div className="col-lg-5 col-md-6 mt-3 mt-lg-0">
-                            <div className="row">
-                                <div className="col-12">
-                                    <div className="action pl-4">
-                                        <ul className="list-unstyled action">
-                                            <li className="list-inline-item">
-                                                <h5 className="mr-2">Sign up for free!</h5>
-                                            </li>
-                                            <li className="list-inline-item">
-                                                <Link to="/register"><button type="submit" className="btn btn-primary px-3">Register</button></Link>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                {/*
-                                <div class="col-12 mt-3 mt-lg-0">
-                                    <div class="row">
-                                        <div class="col social-box d-flex justify-content-end">
-                                            <div class="mt-3 social">
-                                                <ul class="nav">
-                                                    <li class="nav-item">
-                                                        <a href="https://www.instagram.com" class="nav-link fa fa-instagram sizing"></a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a href="https://www.twitter.com" class="nav-link fa fa-twitter sizing"></a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a href="https://www.facebook.com" class="nav-link fa fa-facebook sizing"></a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a href="https://www.linkedin.com" class="nav-link fa fa-linkedin sizing"></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                */}
-                            </div>
-                        </div>
+                        <hr className="clearfix w-100 d-md-none"></hr>
                     </div>
+                </div>
+                <ul className="list-unstyled list-inline text-center">
+                    <li className="list-inline-item">
+                        <a href="https://www.instagram.com" class="nav-link fa fa-instagram sizing"></a>
+                    </li>
+                    <li className="list-inline-item">
+                        <a href="https://www.twitter.com" class="nav-link fa fa-twitter sizing"></a>
+                    </li>
+                    <li className="list-inline-item">
+                        <a href="https://www.facebook.com" class="nav-link fa fa-facebook sizing"></a>
+                    </li>
+                    <li className="list-inline-item">
+                        <a href="https://www.linkedin.com" class="nav-link fa fa-linkedin sizing"></a>
+                    </li>
+                </ul>
+                <div className="footer-copyright text-center py-3">© 2020 Copyright:
+                    <a href="#"> EQuest.US</a>
                 </div>
             </footer>
         </div>

@@ -50,10 +50,10 @@ const ProjectForm = () => {
     }
 
     return (
-        
+
         <form onSubmit={onSubmit}>
             <h2 className="text-primary">{current ? 'Edit Project' : 'Add Project'}</h2>
-            <div className="form-row">
+            <div className="form-row ">
                 <div className="form-group col-md-4">
                     <label htmlFor="text">Title</label>
                     <input className="form-control" type='text' name='title' value={title} onChange={onChange} required />

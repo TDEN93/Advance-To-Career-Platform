@@ -81,7 +81,7 @@ const Login = props => {
                                 <input className="btn btn-primary btn-block submit-button w-75 mx-auto" type='submit' value='Login'/>
                             </div>
                             <div className="form-row">
-                                <div className="form-group col-md-12 pt-4">
+                                <div className="text-center form-group col-md-12 pt-4">
                                     <Link to='/register'>Create an account</Link>
                                 </div>
                             </div>
