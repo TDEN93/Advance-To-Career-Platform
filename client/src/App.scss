@@ -1,0 +1,17 @@
+@import "stylesheets/modules/colors.scss";
+@import "stylesheets/modules/fonts.scss";
+@import "stylesheets/modules/sizing.scss";
+@import "stylesheets/partials/navbar.scss";
+@import "stylesheets/partials/sections.scss";
+@import "stylesheets/partials/footer.scss";
+@import "stylesheets/partials/projects.scss";
+@import "stylesheets/partials/meter.scss";
+@import "stylesheets/partials/mentors.scss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+.alert-undefined i {
+    display: none;
+}

@@ -64,15 +64,15 @@ const Register = props => {
     return (
         <div className="tab-content" id="myTabContent">
         <div className="login tab-pane fade show active" id="login">
-            <div className="container mt-2">
+            <div className="container mb-5">
                 <div className="row">
 
                     <div className="topdiv col-md-5 ml-auto col-lg-4 col-xl-5 py-4 bg-primary text-white text-center">
-                        <div className="card-body align-self-stretch">                            
+                        <div className="card-body align-self-stretch">
                         </div>
                     </div>
 
-                    <div className="bottomdiv col-md-7 mr-auto col-lg-7 col-xl-5 border">
+                    <div className="bottomdiv col-md-7 mr-auto col-lg-7 col-xl-5 border pt-4">
                         <h4 className="pb-3 font-weight-bold">Please fill with your details</h4>
                         <form onSubmit={onSubmit}>
                             <div className="form-row">
@@ -84,7 +84,7 @@ const Register = props => {
                                     <label htmlFor='text'>Last Name</label>
                                     <input className="form-control" type='text' name='lastname' value={lastname} onChange={onChange} required />
                                 </div>
-           
+
                                 <div className="form-group col-md-12">
                                     <label htmlFor='text'>Gender</label>
                                     <input className="form-control" type='text' name='gender' value={gender} onChange={onChange} required />
@@ -100,7 +100,7 @@ const Register = props => {
 
                                 <div className="form-group col-md-12">
                                     <label htmlFor='selectform'>I am a...
-                                    <select id="selectform" className="custom-select" onChange={onChange} name="usertype" required>
+                                    <select id="selectform" className="custom-select ml-4" onChange={onChange} name="usertype" required>
                                         <option name="usertype" value="0">Student</option>
                                         <option name="usertype" value="1">Project Owner</option>
                                         <option name="usertype" value="2">Mentor</option>
@@ -126,7 +126,7 @@ const Register = props => {
                                 <input className="btn btn-primary btn-block submit-button w-75 mx-auto" type='submit' value='Register'/>
                             </div>
                             <div className="form-row">
-                                <div className="form-group col-md-12 pt-4">
+                                <div className="form-group col-md-12 pt-4 d-flex justify-content-end pr-4">
                                     <Link to='/login'>Sign in</Link>
                                 </div>
                             </div>

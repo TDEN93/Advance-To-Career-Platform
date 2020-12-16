@@ -1,9 +1,9 @@
 import React from 'react'
 import Profiles from '../profile/Profiles'
 
-const Profile = () => {    
+const Profile = () => {
     return (
-        <div className="grid-2">
+        <div className="grid-2 container">
             <Profiles />
         </div>
     )

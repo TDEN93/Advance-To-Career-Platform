@@ -1,0 +1,48 @@
+$xs: 480px;
+$sm: 766px;
+$md: 767px;
+$lg: 1119px;
+$xl: 1200px;
+@mixin xs {
+    @media (max-width: #{$xs}) {
+        @content;
+    }
+}
+@mixin sm {
+    @media (max-width: #{$sm}) {
+        @content;
+    }
+}
+@mixin md {
+    @media (min-width: #{$md}) {
+        @content;
+    }
+}
+@mixin lg {
+    @media (min-width: #{$lg}) {
+        @content;
+    }
+}
+@mixin xl {
+    @media (min-width: #{$xl}) {
+        @content;
+    }
+}
+
+.heading3 {
+    @include sm {
+        font-size: 24px;
+    }
+}
+
+footer {
+    h5,
+    p {
+        display: inline-block;
+        margin-left: 3em;
+    }
+
+    p {
+        width: 70%;
+    }
+}

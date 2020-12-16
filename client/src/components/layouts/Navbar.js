@@ -60,18 +60,20 @@ const Navbar = ({ title, icon }) => {
             </ul>
         </Fragment>
     );
-    
+
     return (
         <div>
-            <nav className="navbar navbar-expand-md bg-light">
-                <Link className="navbar-brand" to='/'>{title}</Link>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-of-page" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="top-of-page">
-                    {isAuthenticated ? authLinks : guestLinks}                
-                </div>
-            </nav>
+            <div class="navbar-place bg-light py-1 pt-3">
+                <nav className="navbar text-warning navbar-expand-md bg-light">
+                    <Link className="navbar-brand" to='/'>{title}</Link>
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-of-page" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse" id="top-of-page">
+                        {isAuthenticated ? authLinks : guestLinks}
+                    </div>
+                </nav>
+            </div>
         </div>
     )
 }

@@ -1,0 +1,94 @@
+$xs: 480px;
+$sm: 766px;
+$md: 767px;
+$lg: 1119px;
+$xl: 1200px;
+@mixin xs {
+    @media (max-width: #{$xs}) {
+        @content;
+    }
+}
+@mixin sm {
+    @media (max-width: #{$sm}) {
+        @content;
+    }
+}
+@mixin smd {
+    @media (max-width: #{$lg}) {
+        @content;
+    }
+}
+@mixin md {
+    @media (min-width: #{$md}) {
+        @content;
+    }
+}
+@mixin lg {
+    @media (min-width: #{$lg}) {
+        @content;
+    }
+}
+@mixin xl {
+    @media (min-width: #{$xl}) {
+        @content;
+    }
+}
+
+.projects-section {
+    .searchbar {
+        width: 100%;
+    }
+
+    input:focus {
+        box-shadow: 0 0 0 rgb(255,255,255);
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .listings {
+        box-shadow: 0 0 7px rgba(0,0,0,.3);
+        float: left;
+        display: none;
+
+        .badge {
+            transition: all 0.2s linear;
+        }
+    }
+
+    .listings:hover {
+        .badge {
+            transform: scale(1.1);
+        }
+    }
+
+    .show {
+        display: block;
+    }
+
+    .btn.active {
+        background-color: #666;
+        color: white;
+    }
+
+    btn:focus {
+        box-shadow: 0 0 0 rgb(0,0,0);
+    }
+
+    a,
+    p {
+        text-decoration: none !important;
+    }
+}
+@include smd {
+    .filter-column {
+        display: none;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        visibility: collapse;
+    }
+}

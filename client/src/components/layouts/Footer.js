@@ -10,7 +10,7 @@ const Footer = () => {
                     <div className="row justify-content-between">
                         <div className="col">
                             <a href="#top-of-page">
-                                <h4>Dev2020</h4>
+                                <h4>A2C</h4>
                             </a>
                             <ul className="nav mt-3 info">
                                 <li className="nav-item text-muted">
@@ -29,10 +29,6 @@ const Footer = () => {
                                     <a href="#partners-section" className="nav-link pl-0 mr-2">Partners</a>
                                 </li>
                             </ul>
-                            <small className="text-muted mt-2 d-none d-lg-block">
-                                ©2020 All Rights reserved with:
-                                <a href="https://emrts.us/"> EMR Technical Solutions |</a>
-                            </small>
                         </div>
                         <div className="col-lg-5 col-md-6 mt-3 mt-lg-0">
                             <div className="row">
@@ -48,24 +44,30 @@ const Footer = () => {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="col">
-                                    <div className="mt-3 ml-md-5 social">
-                                        <ul className="nav">
-                                            <li className="nav-item">
-                                                <a href="https://www.instagram.com" className="nav-link fa fa-instagram sizing"></a>
-                                            </li>
-                                            <li className="nav-item">
-                                                <a href="https://www.twitter.com" className="nav-link fa fa-twitter sizing"></a>
-                                            </li>
-                                            <li className="nav-item">
-                                                <a href="https://www.facebook.com" className="nav-link fa fa-facebook sizing"></a>
-                                            </li>
-                                            <li className="nav-item">
-                                                <a href="https://www.linkedin.com" className="nav-link fa fa-linkedin sizing"></a>
-                                            </li>
-                                        </ul>
+                                {/*
+                                <div class="col-12 mt-3 mt-lg-0">
+                                    <div class="row">
+                                        <div class="col social-box d-flex justify-content-end">
+                                            <div class="mt-3 social">
+                                                <ul class="nav">
+                                                    <li class="nav-item">
+                                                        <a href="https://www.instagram.com" class="nav-link fa fa-instagram sizing"></a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="https://www.twitter.com" class="nav-link fa fa-twitter sizing"></a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="https://www.facebook.com" class="nav-link fa fa-facebook sizing"></a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="https://www.linkedin.com" class="nav-link fa fa-linkedin sizing"></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                */}
                             </div>
                         </div>
                     </div>

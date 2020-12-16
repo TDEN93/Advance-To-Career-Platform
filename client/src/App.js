@@ -35,7 +35,6 @@ const App = () => {
       <Router>
         <Fragment>
           <Navbar />
-          <div className="container">
             <Alerts />
             <Switch>
               <Route exact path='/' component={Home} />
@@ -46,7 +45,6 @@ const App = () => {
               <PrivateRoute exact path='/settings' component={Settings} />
               <PrivateRoute exact path='/:id/profile' component={Profile} />
             </Switch>
-          </div>
           <Footer />
         </Fragment>
       </Router>

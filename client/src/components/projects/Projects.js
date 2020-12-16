@@ -10,7 +10,7 @@ const Projects = () => {
     const authContext = useContext(AuthContext);
 
     const { user } = authContext;
-    
+
 
 
     const { projects, filtered, getProjects, loading } = projectContext;
@@ -35,6 +35,7 @@ const Projects = () => {
                 : projects.map(project => (
                     <ProjectItem key={project._id} project={project} user={user}></ProjectItem>
                 ))}
+
             </Fragment>
             ) : <Spinner />}
         </Fragment>
@@ -42,4 +43,3 @@ const Projects = () => {
 }
 
 export default Projects
-

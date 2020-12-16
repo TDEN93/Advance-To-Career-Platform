@@ -6,11 +6,11 @@ import ProjectFilter from '../projects/ProjectFilter';
 
 const Project = () => {
     return (
-        <div className="grid-2">
+        <div className="grid-2 container mb-4">
             <div>
                 <ProjectForm />
             </div>
-            <div>
+            <div className="mt-3">
                 <ProjectFilter />
                 <Projects />
             </div>

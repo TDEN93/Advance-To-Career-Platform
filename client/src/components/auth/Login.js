@@ -47,7 +47,7 @@ const Login = props => {
     }
 
     return (
-        <div className="tab-content" id="myTabContent">
+        <div className="tab-content mb-5" id="myTabContent">
         <div className="login tab-pane fade show active" id="login">
             <div className="container mt-2">
                 <div className="row">

@@ -1,0 +1,179 @@
+$xs: 480px;
+$sm: 766px;
+$md: 767px;
+$lg: 1119px;
+$xl: 1200px;
+@mixin xs {
+    @media (max-width: #{$xs}) {
+        @content;
+    }
+}
+@mixin sm {
+    @media (max-width: #{$sm}) {
+        @content;
+    }
+}
+@mixin md {
+    @media (min-width: #{$md}) {
+        @content;
+    }
+}
+@mixin lg {
+    @media (min-width: #{$lg}) {
+        @content;
+    }
+}
+@mixin xl {
+    @media (min-width: #{$xl}) {
+        @content;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: color(ivory-black);
+    background-color: white;
+}
+
+#top-section {
+    background-color: white;
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    p {
+        color: black;
+        @include md {
+            margin-top: 3em;
+        }
+    }
+
+    a {
+        background-color: color(red);
+    }
+
+    .image-container {
+        img {
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .button-options {
+        @include md {
+            margin-left: 8em;
+            margin-top: 3em;
+        }
+        @include lg {
+            margin-top: 5em;
+        }
+    }
+
+    .signup-btn {
+        @include sm {
+            margin: 0 auto;
+        }
+    }
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-ivory {
+    background-color: color(ivory-black);
+}
+
+.bg-prussian {
+    background-color: color(prussian-blue);
+}
+
+.bg-skyblue {
+    background-color: color(sky-blue);
+}
+
+.signup-btns {
+    ul {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-around;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: block;
+        flex: 0 1 auto;
+        list-style-type: none;
+    }
+}
+
+.toggle-options {
+    .fancy-hover {
+        text-decoration: none;
+        color: black;
+        position: relative;
+    }
+
+    .fancy-hover::after {
+        content: "";
+        position: absolute;
+        left: 15px;
+        bottom: 0;
+        width: 80%;
+        height: 2px;
+        background: #007BFF;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 250ms ease-in;
+    }
+
+    .fancy-hover:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+}
+
+#methods-section {
+    background-color: whitesmoke;
+    @include md {
+        p {
+            padding-top: 20px;
+        }
+    }
+}
+
+.nav-tab {
+    color: dimgray;
+}
+@include sm {
+    .nav-tab {
+        color: #0275d8;
+    }
+}
+
+#testimonials-section {
+    background-color: whitesmoke;
+
+    .review {
+        @include md {
+            max-width: 70%;
+        }
+        @include lg {
+            max-width: 40%;
+        }
+        @include xl {
+            max-width: 30%;
+        }
+        @include sm {
+            max-width: 100%;
+        }
+    }
+}
