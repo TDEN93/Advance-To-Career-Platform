@@ -3,7 +3,7 @@ import AuthContext from '../../context/auth/authContext';
 
 
 
-const Profiles = () => {
+const Settings = () => {
 
     const authContext = useContext(AuthContext);
     const { user } = authContext;
@@ -33,4 +33,4 @@ const Profiles = () => {
     )
 }
 
-export default Profiles
+export default Settings

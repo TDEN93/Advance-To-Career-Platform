@@ -11,8 +11,6 @@ const Projects = () => {
 
     const { user } = authContext;
 
-
-
     const { projects, filtered, getProjects, loading } = projectContext;
 
     useEffect(() => {

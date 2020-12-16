@@ -21,20 +21,22 @@ const Navbar = ({ title, icon }) => {
     const authLinks = (
         <Fragment>
             <ul className="navbar-nav w-100 justify-content-center middle-tabs">
-                <li className="nav-item"><a className="nav-link" href="#top-section">Overview</a></li>
-                <li className="nav-item"><a className="nav-link" href="#methods-sec">How it works</a></li>
-                <li className="nav-item"><Link className="nav-link" to="/projects">Projects</Link></li>
-                <li className="nav-item"><a className="nav-link" href="#partners-sec">Partners</a></li>
+                {/* <li className="nav-item"><a className="nav-link" href="#top-section">Overview</a></li>
+                <li className="nav-item"><a className="nav-link" href="#methods-sec">How it works</a></li> */}
+                {/* <li className="nav-item"><Link className="nav-link" to="/projects">Projects</Link></li> */}
+                {/* <li className="nav-item"><a className="nav-link" href="#partners-sec">Partners</a></li> */}
             </ul>
             <ul className="navbar-nav">
+                <li className="nav-item"><Link className="nav-link" to="/projects">Projects</Link></li>
                 <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     {user && user.firstname}
                     </a>
                     <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <Link className="dropdown-item" to="{user._id}/profile">Profile</Link>
+
+                        <Link className="dropdown-item" to="/{user._id}/profile">Profile</Link>
                         <div className="dropdown-divider"></div>
-                        <Link className="dropdown-item">Settings</Link>
+                        <Link className="dropdown-item" to="/{user._id}/settings">Settings</Link>
                         <Link className="dropdown-item" onClick={onLogout} to="#!">Logout</Link>
                     </div>
                 </li>
@@ -45,12 +47,12 @@ const Navbar = ({ title, icon }) => {
 
     const guestLinks = (
         <Fragment>
-            <ul className="navbar-nav w-100 justify-content-center middle-tabs">
+            {/* <ul className="navbar-nav w-100 justify-content-center middle-tabs">
                 <li className="nav-item"><a className="nav-link" href="#top-section">Overview</a></li>
                 <li className="nav-item"><a className="nav-link" href="#methods-sec">How it works</a></li>
                 <li className="nav-item"><a className="nav-link" href="#partners-sec">Partners</a></li>
-            </ul>
-            <ul className="navbar-nav">
+            </ul> */}
+            <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
                     <Link to='/register' className="nav-link">Register</Link>
                 </li>
