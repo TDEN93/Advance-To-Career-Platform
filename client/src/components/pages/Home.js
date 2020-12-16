@@ -131,17 +131,20 @@ const Home = () => {
             <div id="testimonials-section" className="container-fluid p-4 z-depth-1">
                 <section className="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
                     <h3 className="text-center mb-4">Testimonials</h3>
-                    <div className="row">
+                    <div className="row d-flex justify-content-start">
                         <div className="col-md-6 mb-4 mb-md-0">
-                            <div className="view overlay z-depth-1-half">
-                                <div className="img-container text-center">
-                                    <img src="https://avatars.dicebear.com/api/male/ghd.svg" className="img-fluid profile-img" alt="Profile Picture"></img>
+                            <div className="d-md-flex justify-content-md-end justify-content-sm-center w-75 mx-auto">
+                                <div className="overlay z-depth-1-half">
+                                    <div className="img-container text-center">
+                                        <img src="https://avatars.dicebear.com/api/male/ghd.svg" className="img-fluid profile-img" alt="Profile Picture"></img>
+                                    </div>
+                                    <h5 className="text-center pt-4">Student Name</h5>
                                 </div>
-                                <h5 className="text-center pt-4">Student Name</h5>
                             </div>
                         </div>
                         <div className="review col-md-6 mb-4 mb-md-0 d-flex flex-column justify-content-start">
-                            <p className="pt-md-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            <p className="pt-md-5 ">Loorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                ea commodo consequatrem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                                 ea commodo consequat.</p>
                         </div>
                     </div>

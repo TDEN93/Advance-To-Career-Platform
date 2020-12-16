@@ -15,3 +15,13 @@ html {
 .alert-undefined i {
     display: none;
 }
+
+.container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}

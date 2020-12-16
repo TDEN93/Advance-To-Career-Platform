@@ -22,9 +22,9 @@ const Navbar = ({ title, icon }) => {
         <Fragment>
             <ul className="navbar-nav w-100 justify-content-center middle-tabs">
                 <li className="nav-item"><a className="nav-link" href="#top-section">Overview</a></li>
-                <li className="nav-item"><a className="nav-link" href="#methods-sec">How it works</a></li>
+                <li className="nav-item"><a className="nav-link" href="#methods-section">How it works</a></li>
                 <li className="nav-item"><Link className="nav-link" to="/projects">Projects</Link></li>
-                <li className="nav-item"><a className="nav-link" href="#partners-sec">Partners</a></li>
+                <li className="nav-item"><a className="nav-link" href="#partners-section">Partners</a></li>
             </ul>
             <ul className="navbar-nav">
                 <li className="nav-item dropdown">
@@ -47,8 +47,8 @@ const Navbar = ({ title, icon }) => {
         <Fragment>
             <ul className="navbar-nav w-100 justify-content-center middle-tabs">
                 <li className="nav-item"><a className="nav-link" href="#top-section">Overview</a></li>
-                <li className="nav-item"><a className="nav-link" href="#methods-sec">How it works</a></li>
-                <li className="nav-item"><a className="nav-link" href="#partners-sec">Partners</a></li>
+                <li className="nav-item"><a className="nav-link" href="#methods-section">How it works</a></li>
+                <li className="nav-item"><a className="nav-link" href="#partners-section">Partners</a></li>
             </ul>
             <ul className="navbar-nav">
                 <li className="nav-item">
