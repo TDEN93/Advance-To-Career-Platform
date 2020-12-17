@@ -10,7 +10,6 @@ const Profiles = () => {
 
     useEffect(() => {
         authContext.loadUser();
-        console.log(authContext.loading);
         // eslint-disable-next-line
     }, []);
 
