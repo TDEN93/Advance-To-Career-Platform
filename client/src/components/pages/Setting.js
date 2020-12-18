@@ -11,7 +11,7 @@ const Setting = () => {
     useEffect(() => {
         authContext.loadUser();
         // eslint-disable-next-line
-    }, []); 
+    }, []);
 
     return (
         <div>
