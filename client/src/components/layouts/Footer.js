@@ -44,7 +44,7 @@ const Footer = () => {
                         <a href="https://www.linkedin.com" class="nav-link fa fa-linkedin sizing"></a>
                     </li>
                 </ul>
-                <div className="footer-copyright text-center py-3">© 2020 Copyright:
+                <div className="footer-copyright text-center">© 2020 Copyright:
                     <a href="#"> EQuest.US</a>
                 </div>
             </footer>

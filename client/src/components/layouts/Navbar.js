@@ -33,7 +33,7 @@ const Navbar = ({ title, icon }) => {
                 <li className="nav-item"><a className="nav-link" href="#partners-section">Partners</a></li>
 >>>>>>> b27bc6d293bf26b6642c96b5d8fe70d246673518
             </ul>*/}
-            <ul className="navbar-nav">
+            <ul className="navbar-nav ml-auto">
                 <li className="nav-item"><Link className="nav-link" to="/projects">Projects</Link></li>
                 <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
