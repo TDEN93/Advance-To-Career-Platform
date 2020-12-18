@@ -20,19 +20,19 @@ const Navbar = ({ title, icon }) => {
 
     const authLinks = (
         <Fragment>
-            <ul className="navbar-nav w-100 justify-content-center middle-tabs">
+            {/*<ul className="navbar-nav w-100 justify-content-center middle-tabs">
 <<<<<<< HEAD
-                {/* <li className="nav-item"><a className="nav-link" href="#top-section">Overview</a></li>
-                <li className="nav-item"><a className="nav-link" href="#methods-sec">How it works</a></li> */}
-                {/* <li className="nav-item"><Link className="nav-link" to="/projects">Projects</Link></li> */}
-                {/* <li className="nav-item"><a className="nav-link" href="#partners-sec">Partners</a></li> */}
+                { <li className="nav-item"><a className="nav-link" href="#top-section">Overview</a></li>
+                <li className="nav-item"><a className="nav-link" href="#methods-sec">How it works</a></li> }
+                { <li className="nav-item"><Link className="nav-link" to="/projects">Projects</Link></li> }
+                { <li className="nav-item"><a className="nav-link" href="#partners-sec">Partners</a></li> }
 =======
                 <li className="nav-item"><a className="nav-link" href="#top-section">Overview</a></li>
                 <li className="nav-item"><a className="nav-link" href="#methods-section">How it works</a></li>
                 <li className="nav-item"><Link className="nav-link" to="/projects">Projects</Link></li>
                 <li className="nav-item"><a className="nav-link" href="#partners-section">Partners</a></li>
 >>>>>>> b27bc6d293bf26b6642c96b5d8fe70d246673518
-            </ul>
+            </ul>*/}
             <ul className="navbar-nav">
                 <li className="nav-item"><Link className="nav-link" to="/projects">Projects</Link></li>
                 <li className="nav-item dropdown">
@@ -61,12 +61,12 @@ const Navbar = ({ title, icon }) => {
                 <li className="nav-item"><a className="nav-link" href="#partners-sec">Partners</a></li>
             </ul> */}
             <ul className="navbar-nav ml-auto">
-=======
+{/*=======*/}
                 <li className="nav-item"><a className="nav-link" href="#methods-section">How it works</a></li>
                 <li className="nav-item"><a className="nav-link" href="#partners-section">Partners</a></li>
             </ul>
             <ul className="navbar-nav">
->>>>>>> b27bc6d293bf26b6642c96b5d8fe70d246673518
+{/*>>>>>>> b27bc6d293bf26b6642c96b5d8fe70d246673518*/}
                 <li className="nav-item">
                     <Link to='/register' className="nav-link">Register</Link>
                 </li>
