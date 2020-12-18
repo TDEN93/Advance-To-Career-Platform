@@ -101,7 +101,7 @@ const Home = () => {
                     <div className="profiles d-flex justify-content-around">
                         <div className="profile">
                             <div className="img-container text-center">
-                                <img src="https://avatars.dicebear.com/api/male/ssdwsd.svg" class="profile-img"></img>
+                                <img src="https://bootdey.com/img/Content/avatar/avatar4.png" class="profile-img"></img>
                             </div>
                             <h5 className="user-name text-center">Tray Denney</h5>
                             <h6 className="font-weight-bold text-muted text-center">Full Stack Developer</h6>
@@ -109,7 +109,7 @@ const Home = () => {
                         </div>
                         <div className="profile">
                             <div className="img-container text-center">
-                                <img src="https://avatars.dicebear.com/api/male/ssdsfsd.svg" class="profile-img"></img>
+                                <img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="profile-img"></img>
                             </div>
                             <h5 className="user-name text-center">Verbus Counts</h5>
                             <h6 className="font-weight-bold text-muted text-center">Sub-title</h6>
@@ -117,7 +117,7 @@ const Home = () => {
                         </div>
                         <div className="profile">
                             <div className="img-container text-center">
-                                <img src="https://avatars.dicebear.com/api/male/sgjh.svg" class="profile-img"></img>
+                                <img src="https://bootdey.com/img/Content/avatar/avatar8.png" class="profile-img"></img>
                             </div>
                             <h5 className="user-name text-center">Thomas Le</h5>
                             <h6 className="font-weight-bold text-muted text-center">Sub-title</h6>
@@ -136,7 +136,7 @@ const Home = () => {
                             <div className="d-md-flex justify-content-md-end justify-content-sm-center w-75 mx-auto">
                                 <div className="overlay z-depth-1-half">
                                     <div className="img-container text-center">
-                                        <img src="https://avatars.dicebear.com/api/male/ghd.svg" className="img-fluid profile-img" alt="Profile Picture"></img>
+                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" className="img-fluid profile-img" alt="Profile Picture"></img>
                                     </div>
                                     <h5 className="text-center pt-4">Student Name</h5>
                                 </div>
