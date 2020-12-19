@@ -13,9 +13,9 @@ const Footer = () => {
                             <p>Developing Better Developers</p>
                         </div>
                         <hr className="clearfix w-100 d-md-none"></hr>
-                        <div className="col-md-2 mx-auto">
+                        <div className="col-md-4">
                             <h5 className="font-weight-bold text-uppercase mt-1 mb-2">Links</h5>
-                            <ul className="list-unstyled">
+                            <ul className="list-unstyled d-flex flex-column">
                                 <li className="pt-1">
                                     <a href="#!">How It Works</a>
                                 </li>
@@ -32,16 +32,16 @@ const Footer = () => {
                 </div>
                 <ul className="list-unstyled list-inline text-center">
                     <li className="list-inline-item">
-                        <a href="https://www.instagram.com" class="nav-link fa fa-instagram sizing"></a>
+                        <a href="https://www.instagram.com" className="nav-link fa fa-instagram sizing"></a>
                     </li>
                     <li className="list-inline-item">
-                        <a href="https://www.twitter.com" class="nav-link fa fa-twitter sizing"></a>
+                        <a href="https://www.twitter.com" className="nav-link fa fa-twitter sizing"></a>
                     </li>
                     <li className="list-inline-item">
-                        <a href="https://www.facebook.com" class="nav-link fa fa-facebook sizing"></a>
+                        <a href="https://www.facebook.com" className="nav-link fa fa-facebook sizing"></a>
                     </li>
                     <li className="list-inline-item">
-                        <a href="https://www.linkedin.com" class="nav-link fa fa-linkedin sizing"></a>
+                        <a href="https://www.linkedin.com" className="nav-link fa fa-linkedin sizing"></a>
                     </li>
                 </ul>
                 <div className="footer-copyright text-center">© 2020 Copyright:
