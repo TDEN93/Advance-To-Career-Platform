@@ -54,10 +54,6 @@ body {
         }
     }
 
-    a {
-        background-color: color(red);
-    }
-
     .image-container {
         img {
             max-width: 100%;
@@ -100,6 +96,7 @@ body {
 
 .signup-btns {
     ul {
+        background-color: greenyellow;
         display: flex;
         align-items: stretch;
         justify-content: space-around;

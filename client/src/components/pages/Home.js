@@ -5,23 +5,12 @@ const Home = () => {
         <Fragment>
             {/* Top Section */}
             <section id="top-section">
-                <div className="container-fluid top-section p-0 text-center text-lg-left mb-4 pt-0 pt-md-3">
-                    <div className="row mt-4">
+                <div className="container-fluid top-section pt-0 pt-md-3">
+                    <div className="row">
                         <div className="col-md order-md-2 px-md-4 mb-4 mt-lg-4 pt-md-0">
-                            <h1 className="font-weight-bold">Developing Better Developers!</h1>
-                            <p className="font-weight-bold px-auto">STEM internship projects for state and local governments.</p>
-                            <div className="container p-0 d-flex justify-content-start justify-content-lg-start button-options mx-auto pl-lg-5">
-                                <div className="row p-0 signup-btn">
-                                    <div className="col px-1 ml-lg-1">
-                                        <a className="btn btn-primary font-weight-bold" href="#">Students</a>
-                                    </div>
-                                    <div className="col px-1">
-                                        <a className="btn btn-primary font-weight-bold" href="#">Project Owners</a>
-                                    </div>
-                                    <div className="col px-1">
-                                        <a className="btn btn-primary font-weight-bold" href="#">Mentors</a>
-                                    </div>
-                                </div>
+                            <div className="text-center text-lg-left">
+                                <h1 className="font-weight-bold">Developing Better Developers!</h1>
+                                <p className="font-weight-bold px-auto">STEM internship projects for state and local governments.</p>
                             </div>
                         </div>
                         <div className="image-container col-md p-xs-0 px-md-0 d-flex mb-5">
@@ -32,7 +21,7 @@ const Home = () => {
             </section>
 
             {/* Partner Section */}
-            <section id="partners-section" className=" py-4 mb-5">
+            <section id="partners-section" className=" py-md-4 mb-5">
                 <div className="container text-center">
                     <div className=" grey lighten-2 py-2">
                         <div className="flex-center">
@@ -101,7 +90,7 @@ const Home = () => {
                     <div className="profiles d-flex justify-content-around">
                         <div className="profile">
                             <div className="img-container text-center">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar4.png" class="profile-img"></img>
+                                <img src="https://bootdey.com/img/Content/avatar/avatar4.png" className="profile-img"></img>
                             </div>
                             <h5 className="user-name text-center">Tray Denney</h5>
                             <h6 className="font-weight-bold text-muted text-center">Full Stack Developer</h6>
@@ -109,7 +98,7 @@ const Home = () => {
                         </div>
                         <div className="profile">
                             <div className="img-container text-center">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="profile-img"></img>
+                                <img src="https://bootdey.com/img/Content/avatar/avatar2.png" className="profile-img"></img>
                             </div>
                             <h5 className="user-name text-center">Verbus Counts</h5>
                             <h6 className="font-weight-bold text-muted text-center">Sub-title</h6>
@@ -117,7 +106,7 @@ const Home = () => {
                         </div>
                         <div className="profile">
                             <div className="img-container text-center">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar8.png" class="profile-img"></img>
+                                <img src="https://bootdey.com/img/Content/avatar/avatar8.png" className="profile-img"></img>
                             </div>
                             <h5 className="user-name text-center">Thomas Le</h5>
                             <h6 className="font-weight-bold text-muted text-center">Sub-title</h6>

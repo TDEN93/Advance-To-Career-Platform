@@ -16,13 +16,13 @@ const Settings = () => {
 
     if(authContext.loading !== true) {
         return (
-    <div className="container">
+    <div className="container mb-4">
         <header className="page-title-bar mt-3">
             <nav aria-label="breadcrumb">
                 <ol className="breadcrumb">
                     <li className="breadcrumb-item active">
                         <a href="user-profile.html">
-                            <i className="breadcrumb-icon fa fa-angle-left mr-2"></i>User Full Name</a>
+                            <i className="breadcrumb-icon fa fa-angle-left mr-2"></i>{user.firstname} {user.lastname}</a>
                     </li>
                 </ol>
             </nav>
@@ -59,7 +59,7 @@ const Settings = () => {
                                 </div>
                                 <div className="form-group">
                                     <label for="input04">New Password</label>
-                                    <input type="password" className="form-control" id="input04" defaultValue="" required></input>
+                                    <input type="text" className="form-control" id="input04" defaultValue="" required></input>
                                 </div>
                                 <div className="form-actions">
                                     <div className="update-button text-right">
