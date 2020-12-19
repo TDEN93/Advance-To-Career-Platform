@@ -47,7 +47,7 @@ const Login = props => {
     }
 
     return (
-        <div className="tab-content" id="myTabContent">
+        <div className="tab-content mb-5" id="myTabContent">
         <div className="login tab-pane fade show active" id="login">
             <div className="container mt-2">
                 <div className="row">
@@ -81,7 +81,7 @@ const Login = props => {
                                 <input className="btn btn-primary btn-block submit-button w-75 mx-auto" type='submit' value='Login'/>
                             </div>
                             <div className="form-row">
-                                <div className="form-group col-md-12 pt-4">
+                                <div className="text-center form-group col-md-12 pt-4">
                                     <Link to='/register'>Create an account</Link>
                                 </div>
                             </div>

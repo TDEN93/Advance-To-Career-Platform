@@ -17,7 +17,7 @@ import Alerts from './components/layouts/Alerts';
 import setAuthToken from './utils/setAuthToken';
 import PrivateRoute from './components/routing/PrivateRoute';
 
-import Settings from './components/pages/Settings';
+import Setting from './components/pages/Setting';
 
 import './App.css';
 import Footer from './components/layouts/Footer';
@@ -35,7 +35,7 @@ const App = () => {
       <Router>
         <Fragment>
           <Navbar />
-          <div className="container">
+            <div className="container-fluid">
             <Alerts />
             <Switch>
               <Route exact path='/' component={Home} />
@@ -43,10 +43,10 @@ const App = () => {
               <Route exact path='/register' component={Register} />
               <Route exact path='/login' component={Login} />
               <PrivateRoute exact path='/projects' component={Project} />
-              <PrivateRoute exact path='/settings' component={Settings} />
+              <PrivateRoute exact path='/:id/settings' component={Setting} />
               <PrivateRoute exact path='/:id/profile' component={Profile} />
             </Switch>
-          </div>
+            </div>
           <Footer />
         </Fragment>
       </Router>

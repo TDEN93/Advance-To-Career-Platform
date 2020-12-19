@@ -1,0 +1,24 @@
+.navbar {
+    z-index: 2;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.navbar-place {
+    border-bottom: 2px solid rgba(0,0,0,.3);
+}
+
+.navbar-brand:hover {
+    color: color(primary) !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg%27%3E%3Cpath stroke='rgb(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.dropdown-toggle::after {
+    float: right;
+    margin-right: -1em;
+    margin-top: -.6em;
+    margin-left: 1.3em;
+}

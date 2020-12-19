@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import AuthContext from '../../context/auth/authContext';
-
+import Settings from '../settings/Settings';
 
 
 const Setting = () => {
@@ -11,11 +11,11 @@ const Setting = () => {
     useEffect(() => {
         authContext.loadUser();
         // eslint-disable-next-line
-    }, []); 
+    }, []);
 
     return (
         <div>
-            <h1>Settings</h1>
+            <Settings />
         </div>
     )
 }

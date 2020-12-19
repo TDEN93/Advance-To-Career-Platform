@@ -1,0 +1,27 @@
+.difficulty-text {
+    // margin-bottom: -.01px;
+}
+
+.difficulty-bar {
+    display: flex;
+    height: 20px;
+    width: 100%;
+}
+
+.bar {
+    margin-right: 5px;
+    height: 100%;
+    width: 33.3%;
+}
+
+.bar-1 {
+    background: linear-gradient(to right, green, yellow);
+}
+
+.bar-2 {
+    background: linear-gradient(to right, yellow, orangered);
+}
+
+.bar-3 {
+    background: linear-gradient(to right, orangered, red);
+}
