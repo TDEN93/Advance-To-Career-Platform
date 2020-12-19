@@ -32,7 +32,8 @@ const ProjectItem = ({ project, user }) => {
     )
 
 
-    return (
+    if(user.usertype === "1" && postedBy === user._id) {
+        return (
         <div className='card bg-light col-md-12'>
             <div className="container pt-3">
                 <h3 className='text-primary text-left'>
@@ -49,9 +50,38 @@ const ProjectItem = ({ project, user }) => {
                         {date}
                     </li>)}
                 </ul>
-                {/* Check if the current user is an project owner or a student */}
-                    {user.usertype === "1" ? isAuthAndOwner : isAuthAndStudentAndMentor}
+                {isAuthAndOwner}
             </div>
+        </div>
+        )
+    } else {
+        return (
+            <div className='card bg-light col-md-12'>
+                <div className="container pt-3">
+                    <h3 className='text-primary text-left'>
+                        {title}{' '}<span style={{ float: 'right'}} className={'badge mt-1 py-2 ' + (active === 'active' ? 'badge-success' : 'badge-primary')}>{active.charAt(0).toUpperCase() + active.slice(1)}</span>
+                    </h3>
+                    <ul className="list ml-4">
+                        {desc && (<li className="">
+                            {desc}
+                        </li>)}
+                        {postedBy && (<li className="pt-3">
+                            {postedBy}
+                        </li>)}
+                        {date && (<li className="pt-3">
+                            {date}
+                        </li>)}
+                    </ul>
+                    {isAuthAndStudentAndMentor}
+                </div>
+            </div>
+            )
+    }
+
+
+    return (
+        <div>
+
         </div>
     )
 }

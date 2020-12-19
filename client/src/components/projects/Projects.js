@@ -3,6 +3,7 @@ import ProjectItem from './ProjectItem';
 import ProjectContext from '../../context/project/projectContext';
 import Spinner from '../layouts/Spinner';
 import AuthContext from '../../context/auth/authContext';
+import ProjectForm from './ProjectForm';
 
 
 const Projects = () => {
@@ -25,6 +26,7 @@ const Projects = () => {
 
     return (
         <Fragment>
+            {user !== null && !loading && user.usertype === "1" ? <ProjectForm /> : null}
             {projects !== null && !loading ? (
                 <Fragment>
                 {filtered !== null ? filtered.map(project => (
