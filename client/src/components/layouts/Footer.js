@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -45,7 +45,7 @@ const Footer = () => {
                     </li>
                 </ul>
                 <div className="footer-copyright text-center">© 2020 Copyright:
-                    <a href="#"> EQuest.US</a>
+                    <a href="#"> A2C</a>
                 </div>
             </footer>
         </div>

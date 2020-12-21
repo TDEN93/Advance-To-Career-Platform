@@ -21,7 +21,13 @@ const Projects = () => {
     }, []);
 
     if(projects !== null && projects.length === 0 && !loading) {
-        return <h4 className="mt-4 ml-2">No projects listed</h4>
+
+        return (
+            <Fragment>
+            {user !== null && !loading && user.usertype === "1" ? <ProjectForm /> : null}
+            <h4 className="mt-4 ml-2">No projects listed</h4>
+            </Fragment>
+        )
     }
 
     return (
