@@ -58,8 +58,7 @@ const Register = props => {
                 password
             });
         }
-        console.log(e);
-
+        console.log(e)
     }
 
     return (
@@ -101,8 +100,9 @@ const Register = props => {
 
                                 <div className="form-group col-md-12">
                                     <label htmlFor='selectform'>I am a...
-                                    <select id="selectform" className="custom-select ml-4" onChange={onChange} name="usertype" defaultValue={{label: "Student", value: "0"}} required>
-                                        <option name="usertype" value="0" >Student</option>
+                                    <select id="selectform" className="custom-select ml-4" onChange={onChange} name="usertype" required>
+                                        <option name="usertype" value=""></option>
+                                        <option name="usertype" value="0">Student</option>
                                         <option name="usertype" value="1">Project Owner</option>
                                         <option name="usertype" value="2">Mentor</option>
                                     </select>
