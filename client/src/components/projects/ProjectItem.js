@@ -1,4 +1,6 @@
-import React, { useContext } from 'react'
+import React, { useContext } from 'react';
+import ShowMoreText from 'react-show-more-text';
+import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types';
 import ProjectContext from '../../context/project/projectContext';
 
@@ -18,7 +20,7 @@ const ProjectItem = ({ project, user }) => {
 
     const isAuthAndStudentAndMentor = (
         <p className="d-flex justify-content-end">
-            <button className="btn btn-success btn-sm px-3 py-1">Apply</button>
+            <button className="btn btn-success project-options btn-sm px-3 py-1">Apply</button>
             {/* Add apply function to onclick that checks if the user is already applied to the job or not. Change apply to leave if already applied */}
         </p>
     )
@@ -26,53 +28,66 @@ const ProjectItem = ({ project, user }) => {
     const isAuthAndOwner = (
         <p className="d-flex justify-content-end">
             {/* Make sure current user is owner of project */}
-            <button className="btn btn-dark px-3 py-1 mr-2" onClick={() => setCurrent(project)}>Edit</button>
-            <button className="btn btn-danger px-2 py-1" onClick={onDelete}>Delete</button>
+            <button className="btn btn-dark project-options mr-2" onClick={() => setCurrent(project)}>Edit</button>
+            <button className="btn btn-danger project-options" onClick={onDelete}>Delete</button>
         </p>
     )
 
 
     if(user.usertype === "1" && postedBy === user._id) {
         return (
-        <div className='card bg-light col-md-12'>
-            <div className="container pt-3">
-                <h3 className='text-primary text-left'>
-                    {title}{' '}<span style={{ float: 'right'}} className={'badge mt-1 py-2 ' + (active === 'active' ? 'badge-success' : 'badge-primary')}>{active.charAt(0).toUpperCase() + active.slice(1)}</span>
-                </h3>
-                <ul className="list ml-4">
-                    {desc && (<li className="">
-                        {desc}
-                    </li>)}
-                    {postedBy && (<li className="pt-3">
-                        {postedBy}
-                    </li>)}
-                    {date && (<li className="pt-3">
-                        {date}
-                    </li>)}
-                </ul>
-                {isAuthAndOwner}
+        <div className='projects-section'>
+            <div className='card rounded-0 col-md-12'>
+                <div className="px-0 pt-3">
+                    <div className="row">
+                        <div className="col-8 col-md-9 d-flex px-0">
+                            <h5 className='text-left font-weight-bold'>{title}{' '}</h5>
+                        </div>
+                        <div className="col px-0">
+                          <span style={{ float: 'right'}} className={'badge py-1 px-2 ' + (active === 'active' ? 'badge-success' : 'badge-secondary')}>{active.charAt(0).toUpperCase() + active.slice(1)}</span>
+                        </div>
+                    </div>
+                    <p className="pt-2 text-muted">Posted on {date}</p>
+                    <ShowMoreText className="w-75">{desc}{desc}</ShowMoreText>
+                    <div className="row pt-3">
+                        <div className="col-8 col-md-9 d-flex px-0">
+                            <small>Current Applicants: Less than 5</small>
+                        </div>
+                        <div className="col px-0">
+                             {isAuthAndOwner}
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         )
     } else {
         return (
-            <div className='card bg-light col-md-12'>
-                <div className="container pt-3">
-                    <h3 className='text-primary text-left'>
-                        {title}{' '}<span style={{ float: 'right'}} className={'badge mt-1 py-2 ' + (active === 'active' ? 'badge-success' : 'badge-primary')}>{active.charAt(0).toUpperCase() + active.slice(1)}</span>
-                    </h3>
-                    <ul className="list ml-4">
-                        {desc && (<li className="">
-                            {desc}
-                        </li>)}
-                        {postedBy && (<li className="pt-3">
-                            {postedBy}
-                        </li>)}
-                        {date && (<li className="pt-3">
-                            {date}
-                        </li>)}
-                    </ul>
-                    {isAuthAndStudentAndMentor}
+            <div className='projects-section'>
+                <div className='card rounded-0 col-md-12'>
+                    <div className="px-0 pt-3">
+                        <div className="row d-flex">
+                            <div className="col-8 d-flex px-0 ">
+                                <h5 className='text-left font-weight-bold'>{title}{' '}</h5>
+                            </div>
+                            <div className="col-3 d-flex justify-content-sm-center justify-content-md-end">
+                                <i class="far fa-bookmark pt-1"></i>
+                            </div>
+                            <div className="col-1 px-0 ml-auto">
+                              <span style={{ float: 'right'}} className={'badge py-2 px-2 ' + (active === 'active' ? 'badge-success' : 'badge-secondary')}>{active.charAt(0).toUpperCase() + active.slice(1)}</span>
+                            </div>
+                        </div>
+                        <p className="pt-2 text-muted">Posted on {date}</p>
+                        <ShowMoreText className="w-75">{desc}{desc}</ShowMoreText>
+                        <div className="row pt-3">
+                            <div className="col-8 col-md-9 d-flex px-0">
+                                <small>Current Applicants: Less than 5</small>
+                            </div>
+                            <div className="col px-0">
+                                { isAuthAndStudentAndMentor }
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             )

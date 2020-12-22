@@ -57,10 +57,10 @@ const ProjectForm = () => {
 
     return (
         <Fragment>
-        <Button variant="primary" onClick={handleShow}>
+        <Button variant="primary my-2" onClick={handleShow}>
               Create
             </Button>
-      
+
             <Modal show={show} onHide={handleClose}>
                 <form onSubmit={onSubmit}>
 
