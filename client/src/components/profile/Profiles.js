@@ -69,16 +69,7 @@ const Profiles = () => {
                                     <hr></hr>
                                     <div className="row">
                                         <div className="col-sm-4">
-                                            <h6 className="mb-0">Phone</h6>
-                                        </div>
-                                        <div className="col-sm-7 text-secondary">
-                                            user.phone#
-                                        </div>
-                                    </div>
-                                    <hr></hr>
-                                    <div className="row">
-                                        <div className="col-sm-4">
-                                            <h6 className="mb-0">Mobile</h6>
+                                            <h6 className="mb-0">Mobile Phone</h6>
                                         </div>
                                         <div className="col-sm-7 text-secondary">
                                             user.phone#

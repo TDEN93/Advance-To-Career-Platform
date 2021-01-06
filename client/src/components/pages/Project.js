@@ -8,6 +8,7 @@ const Project = () => {
     return (
         <div>
             <div className="grid-2 container mb-4">
+                <h2 className="text-center text-primary">Projects</h2>
                 <div className="mt-3">
                     <ProjectFilter />
                     <Projects />

@@ -35,6 +35,14 @@ const ProjectItem = ({ project, user }) => {
 
 
     if(user.usertype === "1" && postedBy === user._id) {
+        console.log(date);
+        let fetchedDate = new Date(date);
+        let convert = fetchedDate.getMonth() + 2 + "/";
+        convert += fetchedDate.getDate() + 1 + "/";
+        convert += fetchedDate.getFullYear();
+        const convertedDate = convert;
+
+        console.log(convertedDate);
         return (
         <div className='projects-section'>
             <div className='card rounded-0 col-md-12'>
@@ -47,7 +55,7 @@ const ProjectItem = ({ project, user }) => {
                           <span style={{ float: 'right'}} className={'badge py-1 px-2 ' + (active === 'active' ? 'badge-success' : 'badge-secondary')}>{active.charAt(0).toUpperCase() + active.slice(1)}</span>
                         </div>
                     </div>
-                    <p className="pt-2 text-muted">Posted on {date}</p>
+                    <p className="pt-2 text-muted">Posted on {convertedDate}</p>
                     <ShowMoreText className="w-75">{desc}{desc}</ShowMoreText>
                     <div className="row pt-3">
                         <div className="col-8 col-md-9 d-flex px-0">
